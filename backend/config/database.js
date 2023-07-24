@@ -1,12 +1,10 @@
-// config/database.js
-
 const mysql = require('mysql');
 
 const connection = mysql.createConnection({
   host: 'localhost',
-  user: 'root', // Use 'root' as your MySQL username since you logged in as 'root' without a password
-  password: '', // Leave the password field empty
-  database: 'blog_platform_db', // Your database name (the one you created in phpMyAdmin)
+  user: 'root', 
+  password: '', 
+  database: 'blog_platform_db', 
 });
 
 connection.connect((err) => {
